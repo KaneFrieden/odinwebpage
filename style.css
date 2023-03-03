@@ -1,0 +1,162 @@
+.header,
+.top,
+.upper,
+.lower,
+.footer,
+.imgRow,
+.bottom {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.hLeft,
+.bLeft {
+  display: flex;
+}
+/* 🦴 Boxes setup */
+
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.top {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* 💡 perhaps need to add same width and height to divs inside*/
+}
+
+.upper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lower {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* 💡 perhaps need to add same width and height to divs inside*/
+}
+
+.footer {
+  flex-direction: row;
+  justify-content: center;
+}
+/* 🔲 layout */
+.hLeft {
+  display: flex;
+  align-items: center;
+}
+
+.hRight {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tLeft {
+  align-self: flex-start;
+}
+
+div.main {
+  height: 300px;
+}
+
+.call {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #3882f6;
+}
+
+.bLeft {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.bLeft #bTitle {
+  margin: 0px;
+}
+.lower p#source {
+  align-self: flex-end;
+}
+/* 🏞️ Media styling */
+
+img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.bigImg {
+  height: auto;
+  width: 500px;
+  object-fit: fill;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+
+/* 🖌️ page styling */
+
+/*background colors */
+.header,
+.top,
+.footer {
+  background-color: #1f2937;
+}
+
+.lower {
+  background-color: #e5e7eb;
+}
+
+/*font colors*/
+
+.upper p {
+  color: #1f2937;
+}
+
+.header a,
+.footer,
+.bottom,
+.top p {
+  color: white;
+}
+
+p,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* 🎨 specific styling */
+
+p.subtitle {
+  font-size: 18px;
+}
+
+p.title {
+  font-size: 36px;
+  font-weight: bold;
+}
