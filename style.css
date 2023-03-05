@@ -27,18 +27,20 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex: wrap;
   /* 💡 perhaps need to add same width and height to divs inside*/
 }
 
 .upper {
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 10px;
 }
 
 .lower {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .bottom {
@@ -52,7 +54,9 @@
   flex-direction: row;
   justify-content: center;
 }
+
 /* 🔲 layout */
+
 .hLeft {
   display: flex;
   align-items: center;
@@ -64,38 +68,97 @@
 }
 
 .tLeft {
-  align-self: flex-start;
+  width: 400px;
+  margin-bottom: 0;
 }
 
 div.main {
-  height: 300px;
+  height: 500px;
 }
 
 .call {
+  width: 1200px;
+  height: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #3882f6;
+  border-radius: 10px;
 }
 
 .bLeft {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 15%;
+  width: 500px;
 }
 
 .bLeft #bTitle {
   margin: 0px;
+  font-size: 32px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
-.lower p#source {
+
+.bLeft #bSubtitle {
+  margin-top: 0px;
+  padding-top: 3px;
+}
+
+.bRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15%;
+}
+
+.qBlock {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  align-items: center;
+}
+
+#source {
   align-self: flex-end;
+  font-weight: bold;
+  font-size: 28px;
 }
+#quote {
+  flex-wrap: wrap;
+  font-weight: light;
+}
+.imgRow {
+  padding-top: 5%;
+  gap: 48px;
+}
+
+.imgRowItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.imgRowItem #imgSubtitle {
+  color: #48525e;
+}
+
 /* 🏞️ Media styling */
 
 img {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   object-fit: cover;
+}
+
+.smallImg {
+  border: solid #3882f6;
+  border-width: 5px;
+  border-radius: 15px;
 }
 
 #logo {
@@ -121,6 +184,52 @@ ul {
 }
 
 /* 🖌️ page styling */
+.header .hLeft {
+  font-size: 24px;
+  font-weight: 600;
+  gap: 18px;
+}
+
+.hRight a,
+#tSubtitle,
+#imgSubtitle {
+  font-size: 18px;
+  color: #c3c9d5;
+}
+
+#signUp {
+  background-color: #3882f6;
+  font-size: 18px;
+  color: white;
+  padding: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 8px;
+}
+
+.top #signUp {
+  border: solid #3882f6;
+}
+
+.bottom #signUp {
+  border: solid white;
+}
+
+#tTitle {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0px;
+}
+
+#tSubtitle {
+  margin-top: 3px;
+  width: 500px;
+}
+
+#uTitle {
+  font-size: 36px;
+  font-weight: 800px;
+}
 
 /*background colors */
 .header,
@@ -139,7 +248,7 @@ ul {
   color: #1f2937;
 }
 
-.header a,
+.hLeft a,
 .footer,
 .bottom,
 .top p {
@@ -149,6 +258,12 @@ ul {
 p,
 a {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.qBlock {
+  color: #1f2937;
+  font-size: 36px;
+  font-style: italic;
 }
 /* 🎨 specific styling */
 
